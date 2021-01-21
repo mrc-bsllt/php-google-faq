@@ -8,6 +8,9 @@ a {
   text-decoration: none;
   color: #3367d6;
 }
+ul {
+  list-style: none;
+}
 header {
   position: fixed;
   top: 0;
@@ -17,7 +20,53 @@ header {
   background-color: #ffffff;
   border-bottom: 1px solid #000000;
 }
-
+header > .top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 60%;
+  padding: 0 20px;
+}
+header > .top img {
+  vertical-align: bottom;
+}
+header > .top span {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 22px;
+  color: #5f6368;
+}
+header > .bottom {
+  height: 40%;
+  padding: 0 20px;
+}
+header > .bottom #nav-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+header > .bottom #nav-list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 20px;
+}
+header > .bottom #nav-list > li:first-child {
+  margin-left: 0;
+}
+header > .bottom #nav-list > li:last-child {
+  border-bottom: 3px solid #3367d6;
+}
+header > .bottom #nav-list > li a {
+  display: inline-block;
+  color: #5f6368;
+  font-weight: 500;
+}
+header > .bottom #nav-list > li:last-child a {
+  color: #3367d6;
+}
 #wrapper {
   width: 50%;
   margin: auto;

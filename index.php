@@ -65,12 +65,28 @@
      <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- foglio di stile personale -->
      <link rel="stylesheet" href="css/style.css">
      <title>Google faq</title>
    </head>
    <body>
-     <header></header>
+     <header>
+       <div class="top">
+         <a href="#">
+           <img :src="'img/' + logo" alt="google logo">
+           <span>Privacy e termini</span>
+         </a>
+       </div>
+       <div class="bottom">
+         <ul id="nav-list">
+           <li v-for="link in navLinks">
+             <a href="#">{{ link }}</a>
+           </li>
+         </ul>
+       </div>
+     </header>
 
      <main>
        <div id="wrapper">
@@ -90,5 +106,7 @@
      </main>
 
      <footer></footer>
+
+     <script src="js/script.js" charset="utf-8"></script>
    </body>
  </html>
