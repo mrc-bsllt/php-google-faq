@@ -73,12 +73,14 @@
    </head>
    <body>
      <header>
+
        <div class="top">
          <a href="#">
            <img :src="'img/' + logo" alt="google logo">
            <span>Privacy e termini</span>
          </a>
        </div>
+
        <div class="bottom">
          <ul id="nav-list">
            <li
@@ -86,12 +88,14 @@
            :style="{borderBottom: index == navIndex ? '3px solid #3367d6': 'none'}">
              <a
              href="#"
+             @click="activeNavLink(index)"
              :style="{color: index == navIndex ? '#3367d6': ''}">
              {{ link }}
            </a>
            </li>
          </ul>
        </div>
+
      </header>
 
      <main>
