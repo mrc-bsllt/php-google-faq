@@ -18,7 +18,8 @@ var footer = new Vue(
   {
     el: "footer",
     data: {
-      footerLinks: ["Google", "Tutto su Google", "Privacy", "Termini"]
+      footerLinks: ["Google", "Tutto su Google", "Privacy", "Termini"],
+      options: ["Italiano", "Inglese (Regno Unito)", "Francese", "Tedesco"]
     },
     methods: {}
   }

@@ -122,7 +122,12 @@
              <li v-for="link in footerLinks"><a href="#">{{ link }}</a></li>
            </ul>
          </div>
-         <div class="right"></div>
+         <div class="right">
+           <img src="img/language.png" alt="language foto">
+           <select>
+             <option v-for="language in options">{{ language }}</option>
+           </select>
+         </div>
        </div>
      </footer>
 
