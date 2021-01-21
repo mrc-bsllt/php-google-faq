@@ -99,7 +99,7 @@
      </header>
 
      <main>
-       <div id="wrapper">
+       <div class="wrapper">
        <?php foreach ($blocks as $block) { ?>
 
          <div class="block">
@@ -115,7 +115,16 @@
        </div>
      </main>
 
-     <footer></footer>
+     <footer>
+       <div class="wrapper">
+         <div class="left">
+           <ul>
+             <li v-for="link in footerLinks"><a href="#">{{ link }}</a></li>
+           </ul>
+         </div>
+         <div class="right"></div>
+       </div>
+     </footer>
 
      <script src="js/script.js" charset="utf-8"></script>
    </body>

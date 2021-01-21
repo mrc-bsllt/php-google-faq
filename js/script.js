@@ -1,4 +1,4 @@
-var app = new Vue(
+var header = new Vue(
   {
     el: "header",
     data: {
@@ -11,5 +11,15 @@ var app = new Vue(
         this.navIndex = index;
       }
     }
+  }
+);
+
+var footer = new Vue(
+  {
+    el: "footer",
+    data: {
+      footerLinks: ["Google", "Tutto su Google", "Privacy", "Termini"]
+    },
+    methods: {}
   }
 );
