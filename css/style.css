@@ -96,10 +96,10 @@ footer .wrapper {
 footer .left {
   width: 70%;
   height: 100%;
+  line-height: 45px;
 }
 .left ul {
   display: flex;
-  align-items: center;
   height: 100%;
 }
 .left ul li {
@@ -113,13 +113,13 @@ footer .left {
   font-size: 11px;
 }
 footer .right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   width: 30%;
   height: 100%;
+  line-height: 45px;
+  text-align: right;
 }
 footer .right img {
+  display: inline-block;
   margin: 0 5px;
   vertical-align: middle;
 }
