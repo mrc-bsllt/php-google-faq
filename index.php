@@ -81,8 +81,14 @@
        </div>
        <div class="bottom">
          <ul id="nav-list">
-           <li v-for="link in navLinks">
-             <a href="#">{{ link }}</a>
+           <li
+           v-for="(link,index) in navLinks"
+           :style="{borderBottom: index == navIndex ? '3px solid #3367d6': 'none'}">
+             <a
+             href="#"
+             :style="{color: index == navIndex ? '#3367d6': ''}">
+             {{ link }}
+           </a>
            </li>
          </ul>
        </div>
